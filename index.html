@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Actividad</title>
+</head>
+<body bgcolor="aquamarine">
+	<style >
+	.nombre{
+		   	position: absolute;
+    	top: 310px;
+    	left: 160px;
+    	border: solid black 2px;
+    	width: 200px;
+    	height: 40px;
+	}
+	.cua{
+    	position: absolute;
+   		top: 50px;
+   		left: 350px;
+   		border: solid black 5px;
+   		width: 500px;
+   		height: 250px;
+   		background: green;
+    }
+
+    .lola{
+    	position: absolute;
+    	top: 160px;
+    	left: 160px;
+    	border: solid black 2px;
+    	width: 200px;
+    	height: 40px;
+
+    }
+    .loli{
+    	position: absolute;
+  		top: 0px;
+   		left: 600px;
+   		border: solid black 5px;
+   		width: 200px;
+   		height: 250px;
+   		font-size: 25px;
+   		background: yellow;
+    }
+
+	</style>
+	<div class="cua">
+		 	<script>
+	function calcu(){
+	h=Number(dato1.value)
+	l=Number(dato2.value);
+	p  =Number(dato3.value);
+	j=Number(dato4.value);
+	resul=l*p
+	nosequehagoconmivida= j-resul
+			eje.innerHTML="el valor total de su compra es: "+resul+"y lo que le sobra es: "+nosequehagoconmivida
+			if(resul<nosequehagoconmivida)
+			{
+eje.innerHTML="no le alcanza mijo"
+			}
+			if (p>10)
+			{
+				eje.innerHTML="no hay esa cantidad mijo, ehh"
+
+			}
+
+	}
+
+ 	</script>
+
+	<form>
+		<center>
+		<label>Tienda de doña maria</label>
+		<br>
+		<label>Papitas:  3500</label>
+        <br>
+		<label>Chocolate:  2000</label>
+		<br>
+		<label>Doritos:  1000</label>
+		<br>
+		<input type="text" id="dato1" placeholder="Producto">
+		<input type="text" id="dato2" placeholder="Precio">
+		<input type="text" id="dato3" placeholder="Cantidad">
+		<input type="text" id="dato4" placeholder="Mi dinero">
+
+
+		<div class="loli">
+		<center>
+		<label>producto</label>
+		<br>
+		<label>Papas:  10</label>
+        <br>
+		<label>Chocolate:  10</label>
+		<br>
+		<label>Doritos:  10</label>
+		</div>
+
+	</center>
+	<div class="lola" onclick="calcu()" id="eje">Ejecutar</div>
+	</form>
+</body>
+</html>
